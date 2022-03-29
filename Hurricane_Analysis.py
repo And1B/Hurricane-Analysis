@@ -21,7 +21,6 @@ damages = ['Damages not recorded', '100M', 'Damages not recorded', '40M', '27.9M
 # deaths for each hurricane
 deaths = [90,4000,16,3103,179,184,408,682,5,1023,43,319,688,259,37,11,2068,269,318,107,65,19325,51,124,17,1836,125,87,45,133,603,138,3057,74]
 
-# write your update damages function here:
 def update_damages(damages):
     #changes Billion and Million-values from String to floats
     updated_list = []
@@ -37,7 +36,6 @@ def update_damages(damages):
     return updated_list
 
 
-# write your construct hurricane dictionary function here:
 def convert_to_dict(name, month, year, max_wind, areas_affected, damage, death):
     hurricane_dict = {}
     for i in range(len(name)):
@@ -47,8 +45,6 @@ hurricane_dict = (convert_to_dict(names, months, years, max_sustained_winds, are
 #print(hurricane_dict)
 
 
-
-# write your construct hurricane by year dictionary function here:
 def hurricanes_by_year(hurricanes):
     year_dict = {}
     for keys, values in hurricanes.items():
@@ -59,8 +55,6 @@ year_dict = (hurricanes_by_year(hurricane_dict))
 #print(year_dict)
 
 
-
-# write your count affected areas function here:
 def count_areas(hurricanes):
     areas = []
     areas_dict = {}
@@ -76,9 +70,6 @@ def count_areas(hurricanes):
 count_areas(hurricane_dict)
 
 
-
-
-# write your find most affected area function here:
 def most_affected(areas):
     area = []
     amount = []
@@ -94,9 +85,6 @@ red_area_dict = (most_affected(count_areas(hurricane_dict)))
 
 
 
-
-
-# write your greatest number of deaths function here:
 def greatest_number_of_deaths(hurricanes):
     deaths = []
     hurricane_names = []
@@ -111,10 +99,6 @@ def greatest_number_of_deaths(hurricanes):
 
 
 
-
-
-
-# write your catgeorize by mortality function here:
 def categorize_by_mortality(hurricanes):
     deaths = []
     hurricane_names = []
@@ -148,9 +132,6 @@ def categorize_by_mortality(hurricanes):
 
 
 
-
-
-# write your greatest damage function here:
 def greatest_damage(hurricanes):
     damages = []
     names = []
@@ -170,8 +151,6 @@ def greatest_damage(hurricanes):
 
 
 
-
-# write your catgeorize by damage function here:
 def categorize_by_damage(hurricane):
     damages = []
     hurricane_names = []
